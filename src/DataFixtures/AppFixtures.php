@@ -27,7 +27,13 @@ class AppFixtures extends Fixture
         $this->manager = $manager;
         $this->repoLivre = $this->manager->getRepository(Livre::class);
         $this->loadAdherent();
-        $this->loadPret();
+        $bookCount = $this->repoLivre->createQueryBuilder('l')
+            ->select('COUNT(l.id)')
+            ->getQuery()
+            ->getSingleScalarResult();
+        if ($bookCount > 0) {
+            $this->loadPret();
+        }
 
         $manager->flush();
     }
@@ -93,8 +99,12 @@ class AppFixtures extends Fixture
         for ($i = 0; $i < 25; $i++) { // pour chaque adhérent
             $max = mt_rand(1, 5);
             for ($j = 0; $j <= $max; $j++) { // création des prêts
-                $pret = new Pret();
                 $livre = $this->repoLivre->find(mt_rand(1, 49));
+                // Skip if no book found
+                if ($livre === null) {
+                    continue;
+                }
+                $pret = new Pret();
                 $pret->setLivre($livre)
                     ->setAdherent($this->getReference("adherent" . $i))
                     ->setDatePret($this->faker->dateTimeBetween('-6 months'));

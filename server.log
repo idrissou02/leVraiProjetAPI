@@ -1,0 +1,62 @@
+[30;43m                                                                                [39;49m
+[30;43m [WARNING] The configuration location for the Symfony CLI has changed in v5.17  [39;49m
+[30;43m .0.                                                                            [39;49m
+[30;43m Your configuration is still stored in the legacy directory.                    [39;49m
+[30;43m Please follow these instructions:                                              [39;49m
+[30;43m  * symfony server:stop --all                                                   [39;49m
+[30;43m  * symfony proxy:stop                                                          [39;49m
+[30;43m  * move "/home/codespace/.symfony5" to                                         [39;49m
+[30;43m "/home/codespace/.config/symfony-cli"                                          [39;49m
+[30;43m                                                                                [39;49m
+
+Following [32mWeb Server[39m log file (/home/codespace/.symfony5/log/ee89b2c516360ba788bd3a1b39e07dc263d29e68.log)
+Following [32mPHP[39m log file (/home/codespace/.symfony5/log/ee89b2c516360ba788bd3a1b39e07dc263d29e68/7daf403c7589f4927632ed3b6af762a992f09b78.log)
+[30;43m                                                                                [39;49m
+[30;43m [WARNING] The local web server is optimized for local development and MUST ne  [39;49m
+[30;43m ver be used in a production setup.                                             [39;49m
+[30;43m                                                                                [39;49m
+
+[30;43m                                                                                [39;49m
+[30;43m [WARNING] Please note that the Symfony CLI only listens on 127.0.0.1 by defau  [39;49m
+[30;43m lt since version 5.10.3.                                                       [39;49m
+[30;43m           You can use the --allow-all-ip or --listen-ip flags to ch            [39;49m
+[30;43m ange this behavior.                                                            [39;49m
+[30;43m                                                                                [39;49m
+
+[30;42m                                                                                [39;49m
+[30;42m [OK] Web server listening                                                      [39;49m
+[30;42m      The Web server is using PHP CLI 7.4.33                                    [39;49m
+[30;42m      ]8;;http://127.0.0.1:8000\http://127.0.0.1:8000]8;;\                                                     [39;49m
+[30;42m                                                                                [39;49m
+
+[[32mWeb Server [39m] Apr 30 12:26:54 |DEBUG  | [33mPHP   [39m Reloading PHP versions 
+[[32mWeb Server [39m] Apr 30 12:26:54 |DEBUG  | [33mPHP   [39m Using PHP version 7.4.33 (from .php-version from current dir: /workspaces/idrissouAPI/.php-version) 
+[[32mPHP        [39m] Apr 30 12:26:54 |DEBUG  | [33mRUNNER[39m Waiting for channels (first boot) [36mcmd[39m="PHP"
+[[32mPHP        [39m] [Thu Apr 30 12:26:54 2026] PHP 7.4.33 Development Server (http://127.0.0.1:36117) started
+[[32mWeb Server [39m] Apr 30 12:26:54 |INFO   | [33mPHP   [39m listening [36mpath[39m="/usr/bin/php7.4" [36mphp[39m="7.4.33" [36mport[39m=36117
+[[32mWeb Server [39m] Apr 30 12:26:54 |DEBUG  | [33mPHP   [39m Using PHP version 7.4.33 (from .php-version from current dir: /workspaces/idrissouAPI/.php-version) 
+[[32mPHP        [39m] Apr 30 12:26:56 |DEBUG  | [33mRUNNER[39m Received timer message (first boot) [36mcmd[39m="PHP"
+[[32mPHP        [39m] [Thu Apr 30 12:27:01 2026] 127.0.0.1:46692 Accepted
+[[32mPHP        [39m] [Thu Apr 30 12:27:03 2026] 127.0.0.1:46692 [404]: GET /
+[[32mPHP        [39m] [Thu Apr 30 12:27:03 2026] 127.0.0.1:46692 Closing
+[[32mWeb Server [39m] Apr 30 12:27:03 |[30;43mWARN   [39;49m| [33mSERVER[39m GET  (404) ]8;;https://localhost:8000/\/]8;;\[39m [36mip[39m="127.0.0.1"
+[[32mWeb Server [39m] Apr 30 12:27:05 |INFO   | [33mSERVER[39m GET  (200) ]8;;https://localhost:8000/apiPlatform\/apiPlatform]8;;\[39m 
+[[32mPHP        [39m] [Thu Apr 30 12:27:05 2026] 127.0.0.1:46700 Accepted
+[[32mPHP        [39m] [Thu Apr 30 12:27:05 2026] 127.0.0.1:46700 [200]: GET /apiPlatform
+[[32mPHP        [39m] [Thu Apr 30 12:27:05 2026] 127.0.0.1:46700 Closing
+[[32mWeb Server [39m] Apr 30 12:27:05 |INFO   | [33mSERVER[39m GET  (200) ]8;;https://localhost:8000/bundles/apiplatform/swagger-ui/swagger-ui-standalone-preset.js\/bundles/apiplatform/swagger-ui/swagger-ui-standalone-preset.js]8;;\[39m [36mip[39m="127.0.0.1"
+[[32mWeb Server [39m] Apr 30 12:27:05 |INFO   | [33mSERVER[39m GET  (200) ]8;;https://localhost:8000/bundles/apiplatform/webby.png\/bundles/apiplatform/webby.png]8;;\[39m 
+[[32mWeb Server [39m] Apr 30 12:27:06 |INFO   | [33mSERVER[39m GET  (200) ]8;;https://localhost:8000/bundles/apiplatform/logo-header.svg\/bundles/apiplatform/logo-header.svg]8;;\[39m 
+[[32mWeb Server [39m] Apr 30 12:27:06 |INFO   | [33mSERVER[39m GET  (200) ]8;;https://localhost:8000/bundles/apiplatform/swagger-ui/swagger-ui.css\/bundles/apiplatform/swagger-ui/swagger-ui.css]8;;\[39m 
+[[32mWeb Server [39m] Apr 30 12:27:06 |INFO   | [33mSERVER[39m GET  (200) ]8;;https://localhost:8000/bundles/apiplatform/init-swagger-ui.js\/bundles/apiplatform/init-swagger-ui.js]8;;\[39m 
+[[32mWeb Server [39m] Apr 30 12:27:06 |INFO   | [33mSERVER[39m GET  (200) ]8;;https://localhost:8000/bundles/apiplatform/web.png\/bundles/apiplatform/web.png]8;;\[39m 
+[[32mWeb Server [39m] Apr 30 12:27:06 |INFO   | [33mSERVER[39m GET  (200) ]8;;https://localhost:8000/bundles/apiplatform/fonts/open-sans/700.css\/bundles/apiplatform/fonts/open-sans/700.css]8;;\[39m 
+[[32mWeb Server [39m] Apr 30 12:27:06 |INFO   | [33mSERVER[39m GET  (200) ]8;;https://localhost:8000/bundles/apiplatform/swagger-ui/swagger-ui-bundle.js\/bundles/apiplatform/swagger-ui/swagger-ui-bundle.js]8;;\[39m 
+[[32mWeb Server [39m] Apr 30 12:27:06 |INFO   | [33mSERVER[39m GET  (200) ]8;;https://localhost:8000/bundles/apiplatform/style.css\/bundles/apiplatform/style.css]8;;\[39m 
+[[32mWeb Server [39m] Apr 30 12:27:06 |INFO   | [33mSERVER[39m GET  (200) ]8;;https://localhost:8000/bundles/apiplatform/fonts/open-sans/400.css\/bundles/apiplatform/fonts/open-sans/400.css]8;;\[39m 
+[[32mWeb Server [39m] Apr 30 12:27:06 |INFO   | [33mSERVER[39m GET  (200) ]8;;https://localhost:8000/bundles/apiplatform/fonts/open-sans/files/open-sans-latin-400-normal.woff2\/bundles/apiplatform/fonts/open-sans/files/open-sans-latin-400-normal.woff2]8;;\[39m 
+[[32mWeb Server [39m] Apr 30 12:27:06 |INFO   | [33mSERVER[39m GET  (200) ]8;;https://localhost:8000/bundles/apiplatform/fonts/open-sans/files/open-sans-latin-700-normal.woff2\/bundles/apiplatform/fonts/open-sans/files/open-sans-latin-700-normal.woff2]8;;\[39m 
+[[32mWeb Server [39m] Apr 30 12:27:14 |INFO   | [33mSERVER[39m HEAD (200) [36m/apiPlatform[39m [36mhost[39m="localhost:8000" [36mscheme[39m="https"
+[[32mPHP        [39m] [Thu Apr 30 12:27:14 2026] 127.0.0.1:46044 Accepted
+[[32mPHP        [39m] [Thu Apr 30 12:27:14 2026] 127.0.0.1:46044 [200]: HEAD /apiPlatform
+[[32mPHP        [39m] [Thu Apr 30 12:27:14 2026] 127.0.0.1:46044 Closing
