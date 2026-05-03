@@ -79,21 +79,21 @@ class Auteur
     /**
      * @ORM\Column(type="string", length=255)
      * @Groups({"get"})
-     * @Groups({"get_auteur_role_adherent","put_role_manager"})
+     * @Groups({"get_auteur_role_adherent","put_role_manager","get_role_adherent"})
      */
     private $nom;
 
     /**
      * @ORM\Column(type="string", length=255)
      * @Groups({"get"})
-     * @Groups({"get_auteur_role_adherent","put_role_manager"})
+     * @Groups({"get_auteur_role_adherent","put_role_manager","get_role_adherent"})
      */
     private $prenom;
 
     /**
      * @ORM\ManyToOne(targetEntity="App\Entity\Nationalite", inversedBy="auteurs")
      * @ORM\JoinColumn(nullable=false)
-     * @Groups({"get_auteur_role_adherent","put_role_manager"})
+     * @Groups({"get_auteur_role_adherent","put_role_manager","get_role_adherent"})
      */
     private $nationalite;
 
